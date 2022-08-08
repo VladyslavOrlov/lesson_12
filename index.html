@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="bg-primary mb-4 py-4 col">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Меню</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Главная страница</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Выберите категорию
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Одежда</a></li>
+                    <li><a class="dropdown-item" href="#">Обувь</a></li>
+                    <li><a class="dropdown-item" href="#">Сумки</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="bg-secondary mb-4 py-4 col-xxl-3 col-xl-3 col-lg-3 col-md-4">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/folc.jpg" class="d-block w-100" alt="sport1">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/pexels-photo-1271147-600x369.jpeg" class="d-block w-100" alt="sport2">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/sportovi.jpg" class="d-block w-100" alt="sport3">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/women.jpg" class="d-block w-100" alt="sport4">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-success mb-4 py-4 col-xxl-6 col-xl-6 col-lg-6 col-md-8">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Раздел №1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>В этом разделе</strong> имеется краткая информация о одежде
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Раздел №2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>В этом разделе</strong> имеется краткая информация про обувь
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Раздел №3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>В этом разделе</strong> имеется краткая информацию про сумки
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-danger mb-4 py-4 col-xxl-3 col-xl-3 col-lg-3">
+        <form action="#">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Логин</span>
+            <input type="text" class="form-control" placeholder="Логин" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon3">Имя</span>
+            <input type="text" class="form-control" placeholder="Имя" aria-label="Name" aria-describedby="basic-addon3">
+          </div>
+
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Возраст</label>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Ваш возраст...</option>
+              <option value="1">До 20 лет</option>
+              <option value="2">От 20 до 40 лет</option>
+              <option value="3">Старше 40 лет</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3">
+            <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Раздел</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Раздел1</a></li>
+              <li><a class="dropdown-item" href="#">Раздел2</a></li>
+              <li><a class="dropdown-item" href="#">Раздел3</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Нету нужного</a></li>
+            </ul>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+          </div>
+
+          <div class="input-group mb-3">
+            <select class="form-select" id="inputGroupSelect02">
+              <option selected>Выберите...</option>
+              <option value="1">Одежда</option>
+              <option value="2">Обувь</option>
+              <option value="3">Сумки</option>
+            </select>
+            <label class="input-group-text" for="inputGroupSelect02">Товар</label>
+          </div>
+
+
+        </form>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="bg-warning py-4 col">&copy; student Orlov</div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
